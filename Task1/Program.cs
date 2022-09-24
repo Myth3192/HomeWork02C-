@@ -29,9 +29,20 @@ void Task3()
         Console.WriteLine("Theres no third number");
     }
 }
-Task3();
+
 //Task3
 void Task4()
 {
-    clnsole.WriteLine("Enter day number");
+    Console.WriteLine("Enter day number");
+    int daynumber = Convert.ToInt32(Console.ReadLine());
+
+    if (daynumber==6 || daynumber ==7){
+        Console.WriteLine("Its weekend");
+    }
+    else if (daynumber<1 || daynumber>=8){
+        Console.WriteLine("Enter correct day");
+    }
+    else{
+        Console.WriteLine("Its workday");
+    }
 }
